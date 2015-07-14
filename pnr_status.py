@@ -2,7 +2,7 @@ import urllib2
 import urllib
 import ipdb
 
-# Change mobile numbers to which you want to send messages
+# Change mobile numbers to which you want to send messages or can add more
 send_to_list = ['9999999999', '8888888888']
 api_key = "12345"
 smsGupshupUserID = "userid"
