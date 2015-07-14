@@ -12,7 +12,7 @@ def getPNR(pnr):
     req = urllib2.Request("http://api.railwayapi.com/pnr_status/pnr/"+pnr+"/apikey/"+api_key+"/")
     response = urllib2.urlopen(req)
    
-   # The response is in json format. Remove new line characters ans convert it to python dictionaries
+   # The response is in json format. Remove new line characters and convert it to python dictionaries
     response_dict = eval(response.read().replace("\n", ""))
     if response_dict["error"] == False :
         trainNumber = response_dict["train_num"]
